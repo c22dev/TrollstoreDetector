@@ -31,6 +31,7 @@ struct iOSTrollstoreDetectionApp: App {
                             //Alert pop-up, can replace with anything from there
                             UIApplication.shared.confirmAlert(title: "TrollStore is installed on your device", body: "Our app can't work with TrollStore for security purposes.", onOK: {
                                 // Do what your app should do if button pressed (replace this comment chunk)
+                                //Keep resume
                             }, noCancel: true)
                             //Keep resume
                             
