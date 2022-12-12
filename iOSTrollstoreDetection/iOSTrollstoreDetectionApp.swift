@@ -12,8 +12,9 @@ struct iOSTrollstoreDetectionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            //If you don't have onAppear, keep from now
                 .onAppear {
-                    // Check if user has TrollTools folder
+                //Start keep
                     do {
                         //PATHS, do not delete this chunk
                         
@@ -24,24 +25,27 @@ struct iOSTrollstoreDetectionApp: App {
                         // Path for Mugunghwa (see https://github.com/s8ngyu/Mugunghwa)
                         let PathMG = "/private/var/mobile/mugunghwa"
                         
-                        
+                        //Check if file exist
                         if FileManager.default.fileExists(atPath: PathTT) || FileManager.default.fileExists(atPath: PathLS) || FileManager.default.fileExists(atPath: PathMG) {
-                            
+                            //WARNING, Keep temporaly end. Replace anything between this comment and Keep resume.
                             //Alert pop-up, can replace with anything from there
                             UIApplication.shared.confirmAlert(title: "TrollStore is installed on your device", body: "Our app can't work with TrollStore for security purposes.", onOK: {
-                                // Do what your app should do if button pressed.
+                                // Do what your app should do if button pressed (replace this comment chunk)
+                                //Keep resume
                             }, noCancel: true)
                             
                             
                         }
                 }
+            //Keep end
             }
+        //Keep ends for people without onAppear
         }
     }
 }
 
 
-// Alert System
+// Alert System if you want to keep/keeped 'UIApplication.shared.confirmAlert'
 
 var currentUIAlertController: UIAlertController?
 
@@ -84,7 +88,6 @@ extension UIApplication {
             }
             
             topController.present(alert, animated: true)
-            // topController should now be your topmost view controller
         }
     }
 }
