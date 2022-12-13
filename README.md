@@ -1,3 +1,5 @@
+<img src='https://i.ibb.co/Ksc0RFR/Pag-NX-modified.png' width=100>
+
 # TrollStore Detector
 A Swift UI TrollStore detector
 
