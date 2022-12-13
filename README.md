@@ -4,7 +4,7 @@
 A Swift UI TrollStore detector
 
 ## What is TrollStore Detector ?
-TrollStore Detector is a Swift program detecting if TrollStore is installed by checking if TrollStore type apps (listed in list.md) have created directory in /private/var/ (listed in paths.txt).
+TrollStore Detector is a Swift program detecting if TrollStore is installed by checking if TrollStore type apps have created directory in /private/var/ (listed in paths.txt).
 
 You can use this project without crediting it. The only goal of this is to contribute on TrollStore directorys.
 
